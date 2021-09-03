@@ -1,0 +1,116 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: grey;
+    padding: 10px;
+    width: 30vw;
+    height: 80vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "display display display display"
+    "clear clear del del"
+    "one two three add"
+    "four five six subtract"
+    "seven eight nine multiply"
+    "decimal zero equals divide";
+}
+
+.display {
+    position: relative;
+    background-color: lightblue;
+    grid-area: display;
+    font-size: 35px;
+}
+
+#display-content {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.digit {
+    background-color: lightgrey;
+}
+
+.operator {
+    background-color: orange;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+ #seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#add {
+    grid-area: add;
+}
+
+#subtract {
+    grid-area: subtract;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equals {
+    grid-area: equals;
+}
+
+#clear {
+    background-color: lightcoral;
+    grid-area: clear;
+}
+
+#del {
+    background-color: #5522ff;
+    grid-area: del;
+}
+
